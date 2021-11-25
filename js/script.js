@@ -27,6 +27,9 @@ for(let i = 0; i < 2; i++){
 for( let i = 0; i < studenti.length; i++ ) {
     const student = studenti[i];
     for(let key in student) {
-        console.log(student[key]);
+        if(key !== 'age'){
+            console.log(student[key]);
+        }
+        
     }
 }
